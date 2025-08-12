@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>The Ultimate Practice Mute Buyer's Guide - Real Mute</title>
   <meta name="description" content="A professional buyer’s guide to practice mutes: the common flaws (intonation, back-pressure, muddy tone) and how to choose a mute that truly helps—featuring Real Mute." />
@@ -56,7 +56,7 @@
     @media (prefers-reduced-motion: reduce){
       *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
     }
-    /* SR-only for skip link */
+    /* SR-only */
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .sr-only:focus{position:static;width:auto;height:auto;margin:0;clip:auto;padding:.5rem 1rem;background:#fff;border-radius:.5rem;box-shadow:0 0 0 3px var(--luxury-gold)}
 
@@ -76,7 +76,7 @@
     /* Header */
     .royal-header{
       background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue) 50%,var(--medium-blue));
-      color:#fff;text-align:center;padding:100px 60px;position:relative;overflow:hidden
+      color:#fff;text-align:center;padding:90px 60px;position:relative;overflow:hidden
     }
     .royal-header::before{
       content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
@@ -89,232 +89,174 @@
       background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold));opacity:.8
     }
     .crown-logo{
-      width:280px;height:280px;margin:0 auto 50px;border-radius:50%;
+      width:220px;height:220px;margin:0 auto 40px;border-radius:50%;
       background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold) 50%,var(--dark-gold));
       display:flex;align-items:center;justify-content:center;
       box-shadow:0 40px 80px rgba(255,215,0,.4),0 20px 40px rgba(0,0,0,.2),inset 0 4px 8px rgba(255,255,255,.3);
       position:relative;overflow:hidden;border:4px solid rgba(255,255,255,.3)
     }
-    .crown-logo::before{
-      content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
-      background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.4),transparent);
-      animation:rotate 10s linear infinite
-    }
-    .crown-icon{
-      font-size:7rem;color:var(--royal-blue);z-index:3;position:relative;text-shadow:3px 3px 6px rgba(0,0,0,.3);
-      animation:float 8s ease-in-out infinite
-    }
-    @keyframes float{
-      0%,100%{transform:translateY(0) rotate(0)}25%{transform:translateY(-8px) rotate(1deg)}
-      50%{transform:translateY(-15px) rotate(0)}75%{transform:translateY(-8px) rotate(-1deg)}
-    }
+    .crown-logo img{width:72%;height:auto;display:block}
     .royal-title{
-      font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,5.5rem);
-      font-weight:800;margin-bottom:30px;letter-spacing:-3px;position:relative;z-index:2;
+      font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5.5vw,5rem);
+      font-weight:800;margin-bottom:18px;letter-spacing:-2px;position:relative;z-index:2;
       background:linear-gradient(135deg,#ffffff 0%,#f7fafc 100%);
-      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-      color:#fff /* fallback */
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text
     }
     .royal-subtitle{
-      font-family:'Poppins',sans-serif;font-size:clamp(1.4rem,3vw,2rem);
-      font-weight:400;margin-bottom:50px;opacity:.95;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:2;line-height:1.7
+      font-family:'Poppins',sans-serif;font-size:clamp(1.2rem,2.6vw,1.8rem);
+      font-weight:400;margin-bottom:40px;opacity:.95;max-width:800px;margin-inline:auto;line-height:1.7
     }
     .luxury-badge{
       display:inline-block;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      color:var(--royal-blue);padding:20px 50px;border-radius:50px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase;letter-spacing:3px;
+      color:var(--royal-blue);padding:16px 40px;border-radius:50px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;letter-spacing:3px;
       box-shadow:0 20px 40px rgba(255,215,0,.5),inset 0 3px 6px rgba(255,255,255,.3);
-      position:relative;z-index:2;border:3px solid rgba(255,255,255,.3);transition:all .4s ease
+      position:relative;border:3px solid rgba(255,255,255,.3)
     }
-    .luxury-badge:hover{transform:translateY(-3px) scale(1.02)}
-
     .premium-link-box{
       background:rgba(255,255,255,.2);border:3px solid rgba(255,215,0,.4);
-      border-radius:20px;padding:30px;margin-top:50px;position:relative;z-index:2;backdrop-filter:blur(15px);
+      border-radius:20px;padding:24px;margin-top:34px;backdrop-filter:blur(15px);
       box-shadow:0 20px 40px rgba(0,0,0,.1),inset 0 3px 6px rgba(255,255,255,.3)
     }
-    .premium-link-box p{margin:0;font-family:'Poppins',sans-serif;font-size:1.3rem;opacity:.95;text-align:center}
+    .premium-link-box p{margin:0;font-family:'Poppins',sans-serif;font-size:1.15rem;opacity:.95;text-align:center}
 
     /* Sections */
-    .elite-section{padding:100px 80px;border-bottom:2px solid rgba(255,215,0,.15);position:relative;background:linear-gradient(135deg,#fff 0%,#fafbfc 100%)}
+    .elite-section{padding:90px 80px;border-bottom:2px solid rgba(255,215,0,.15);position:relative;background:linear-gradient(135deg,#fff 0%,#fafbfc 100%)}
     .elite-section:nth-child(even){background:linear-gradient(135deg,#f8fafc 0%,#fff 100%)}
     .elite-section:last-child{border-bottom:none}
     .elite-section::before{
       content:'';position:absolute;top:0;left:0;width:10px;height:100%;
       background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));opacity:.8;box-shadow:0 0 30px rgba(255,215,0,.4)
     }
-    .section-header{margin-bottom:60px;text-align:center}
+    .section-header{margin-bottom:48px;text-align:center}
 
     .diamond-number{
-      display:inline-flex;width:100px;height:100px;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      color:var(--royal-blue);border-radius:50%;font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:900;align-items:center;justify-content:center;margin-bottom:30px;
+      display:inline-flex;width:90px;height:90px;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
+      color:var(--royal-blue);border-radius:50%;font-family:'Poppins',sans-serif;font-size:2.2rem;font-weight:900;align-items:center;justify-content:center;margin-bottom:24px;
       box-shadow:0 25px 50px rgba(255,215,0,.4),inset 0 3px 6px rgba(255,255,255,.3);
       border:4px solid rgba(255,255,255,.4);position:relative;overflow:hidden
     }
-    .diamond-number::before{
-      content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
-      background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.3),transparent);animation:rotate 8s linear infinite
-    }
     .elite-title{
-      font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:var(--royal-blue);
-      margin-bottom:25px;line-height:1.2;text-shadow:2px 4px 8px rgba(0,0,0,.1)
+      font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:800;color:var(--royal-blue);
+      margin-bottom:18px;line-height:1.2
     }
-    .elite-subtitle{font-family:'Poppins',sans-serif;font-size:1.5rem;color:var(--text-medium);font-weight:500;margin-bottom:50px;opacity:.9}
+    .elite-subtitle{font-family:'Poppins',sans-serif;font-size:1.3rem;color:var(--text-medium);font-weight:500;margin-bottom:36px}
 
-    .luxury-visual{
-      width:100%;max-width:700px;height:450px;margin:50px auto;border-radius:30px;
-      background:linear-gradient(135deg,#667eea 0%,#764ba2 50%,#f093fb 100%);display:flex;align-items:center;justify-content:center;font-size:6rem;color:white;
-      text-shadow:3px 3px 10px rgba(0,0,0,.4);box-shadow:0 40px 80px rgba(0,0,0,.2),inset 0 3px 6px rgba(255,255,255,.3);position:relative;overflow:hidden
+    /* Utility images */
+    .image-frame{
+      width:100%; max-width:900px; margin:32px auto; border-radius:24px; overflow:hidden;
+      box-shadow:0 30px 60px rgba(0,0,0,.15), inset 0 2px 4px rgba(255,255,255,.25);
     }
-    .luxury-visual::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 70%);animation:pulse 6s ease-in-out infinite}
-    @keyframes pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.8;transform:scale(1.1)}}
-
-    .inline-luxury{
-      width:350px;height:350px;border-radius:30px;background:linear-gradient(135deg,#ff9a9e 0%,#fecfef 50%,#fecfef 100%);
-      display:flex;align-items:center;justify-content:center;font-size:5rem;color:white;text-shadow:3px 3px 10px rgba(0,0,0,.3);
-      margin:0 50px 40px 0;float:left;box-shadow:0 30px 60px rgba(0,0,0,.15),inset 0 3px 6px rgba(255,255,255,.3);position:relative;overflow:hidden
+    .image-frame img{display:block;width:100%;height:auto}
+    .inline-image{
+      width:350px; max-width:40vw; border-radius:22px; margin:0 40px 30px 0; float:left;
+      box-shadow:0 20px 40px rgba(0,0,0,.12), inset 0 2px 4px rgba(255,255,255,.2);
     }
-    .inline-luxury.right{float:right;margin:0 0 40px 50px}
-    .inline-luxury::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.2),transparent);animation:rotate 12s linear infinite}
+    .inline-image.right{ float:right; margin:0 0 30px 40px }
+    .badge-under-cta{ display:block; margin:28px auto 0; width:140px; max-width:40% }
 
-    .luxury-text{font-family:'Inter',sans-serif;font-size:1.25rem;line-height:2;color:var(--text-royal);margin-bottom:35px;text-align:justify}
-    .luxury-text.large{font-family:'Poppins',sans-serif;font-size:1.5rem;font-weight:600;color:var(--deep-blue);text-align:center;margin-bottom:50px}
+    .luxury-text{font-family:'Inter',sans-serif;font-size:1.15rem;line-height:2;color:var(--text-royal);margin-bottom:28px;text-align:justify}
+    .luxury-text.large{font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:600;color:var(--deep-blue);text-align:center;margin-bottom:42px}
 
     .golden-highlight{
       background:linear-gradient(135deg,rgba(255,215,0,.2) 0%,rgba(255,165,0,.3) 100%);
-      padding:8px 16px;border-radius:10px;font-weight:800;color:var(--royal-blue);border:2px solid rgba(255,215,0,.4);box-shadow:0 4px 12px rgba(255,215,0,.3)
+      padding:6px 12px;border-radius:10px;font-weight:800;color:var(--royal-blue);border:2px solid rgba(255,215,0,.4)
     }
 
     .golden-link{
       color:var(--dark-gold);text-decoration:none;font-weight:800;
       background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
       -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;border-bottom:3px solid var(--luxury-gold);
-      transition:all .3s ease;position:relative
+      transition:all .3s ease
     }
-    .golden-link:hover{border-bottom-color:var(--accent-gold);transform:translateY(-2px)}
+    .golden-link:hover{border-bottom-color:var(--accent-gold);transform:translateY(-1px)}
 
     .royal-problem{
       background:linear-gradient(135deg,#fef5e7 0%,#fed7aa 50%,#fdba74 100%);
-      border:4px solid #f97316;border-radius:30px;padding:50px;margin:60px 0;position:relative;overflow:hidden;
-      box-shadow:0 30px 60px rgba(249,115,22,.2),inset 0 3px 6px rgba(255,255,255,.4)
+      border:4px solid #f97316;border-radius:30px;padding:40px;margin:48px 0;position:relative;overflow:hidden;
+      box-shadow:0 30px 60px rgba(249,115,22,.2),inset 0 3px 6px rgba(255,255,255,.35)
     }
-    .royal-problem::before{content:'⚠️';font-size:5rem;position:absolute;top:30px;right:40px;opacity:.5;animation:bounce 3s infinite}
-    @keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-15px)}60%{transform:translateY(-8px)}}
-
     .royal-solution{
       background:linear-gradient(135deg,#ecfdf5 0%,#a7f3d0 50%,#6ee7b7 100%);
-      border:4px solid #10b981;border-radius:30px;padding:50px;margin:60px 0;position:relative;overflow:hidden;
-      box-shadow:0 30px 60px rgba(16,185,129,.2),inset 0 3px 6px rgba(255,255,255,.4)
+      border:4px solid #10b981;border-radius:30px;padding:40px;margin:48px 0;position:relative;overflow:hidden;
+      box-shadow:0 30px 60px rgba(16,185,129,.2),inset 0 3px 6px rgba(255,255,255,.35)
     }
-    .royal-solution::before{content:'✅';font-size:5rem;position:absolute;top:30px;right:40px;opacity:.5;animation:glow 2s infinite}
-    @keyframes glow{0%,100%{transform:scale(1);filter:brightness(1)}50%{transform:scale(1.15);filter:brightness(1.2)}}
+    .royal-box-title{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:800;margin-bottom:20px;color:var(--royal-blue)}
 
-    .royal-box-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;margin-bottom:30px;color:var(--royal-blue);text-shadow:2px 2px 4px rgba(0,0,0,.1)}
-
-    .platinum-list{list-style:none;padding:0;margin:40px 0}
+    .platinum-list{list-style:none;padding:0;margin:30px 0}
     .platinum-list li{
-      padding:25px 0 25px 80px;position:relative;font-size:1.2rem;line-height:1.8;border-bottom:2px solid rgba(255,215,0,.2);transition:all .4s ease
+      padding:18px 0 18px 70px;position:relative;font-size:1.08rem;line-height:1.8;border-bottom:2px solid rgba(255,215,0,.2)
     }
-    .platinum-list li:hover{padding-left:90px;background:rgba(255,215,0,.08);border-radius:15px}
     .platinum-list li:last-child{border-bottom:none}
     .platinum-list li::before{
-      content:'';position:absolute;left:20px;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;
-      background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));box-shadow:0 8px 20px rgba(255,215,0,.4);transition:all .4s ease
+      content:'';position:absolute;left:18px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;
+      background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));box-shadow:0 8px 20px rgba(255,215,0,.35)
     }
-    .platinum-list li:hover::before{transform:translateY(-50%) scale(1.2);box-shadow:0 12px 30px rgba(255,215,0,.6)}
-    .platinum-list.problems li::before{background:linear-gradient(135deg,#fca5a5 0%,#ef4444 100%);box-shadow:0 8px 20px rgba(239,68,68,.4)}
-    .platinum-list.solutions li::before{background:linear-gradient(135deg,#86efac 0%,#10b981 100%);box-shadow:0 8px 20px rgba(16,185,129,.4)}
-    .platinum-list.checklist li::before{background:linear-gradient(135deg,#a5b4fc 0%,#6366f1 100%);box-shadow:0 8px 20px rgba(99,102,241,.4)}
+    .platinum-list.problems li::before{background:linear-gradient(135deg,#fca5a5 0%,#ef4444 100%)}
+    .platinum-list.solutions li::before{background:linear-gradient(135deg,#86efac 0%,#10b981 100%)}
+    .platinum-list.checklist li::before{background:linear-gradient(135deg,#a5b4fc 0%,#6366f1 100%)}
 
-    .diamond-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:50px;margin:80px 0}
+    .diamond-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:34px;margin:56px 0}
     .diamond-card{
-      background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);border:4px solid var(--luxury-gold);border-radius:30px;padding:50px;text-align:center;
-      box-shadow:0 30px 60px rgba(0,0,0,.1),inset 0 3px 6px rgba(255,255,255,.6);transition:all .5s ease;position:relative;overflow:hidden
+      background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);border:4px solid var(--luxury-gold);border-radius:26px;padding:36px;text-align:center;
+      box-shadow:0 30px 60px rgba(0,0,0,.1),inset 0 3px 6px rgba(255,255,255,.55);position:relative;overflow:hidden
     }
     .diamond-card::before{
-      content:'';position:absolute;top:0;left:0;right:0;height:10px;background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold),var(--luxury-gold));
+      content:'';position:absolute;top:0;left:0;right:0;height:8px;background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold),var(--luxury-gold));
       background-size:200% 100%;animation:shimmer 4s ease-in-out infinite
     }
-    .diamond-card:hover{transform:translateY(-15px) scale(1.03);box-shadow:0 50px 100px rgba(0,0,0,.2),0 0 40px rgba(255,215,0,.4),inset 0 3px 6px rgba(255,255,255,.7);border-color:var(--accent-gold)}
     .diamond-pillar-number{
-      width:120px;height:120px;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      color:var(--royal-blue);border-radius:50%;font-family:'Poppins',sans-serif;font-size:3rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 35px;
-      box-shadow:0 25px 50px rgba(255,215,0,.4),inset 0 3px 6px rgba(255,255,255,.4);border:4px solid rgba(255,255,255,.4);position:relative;overflow:hidden
+      width:110px;height:110px;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
+      color:var(--royal-blue);border-radius:50%;font-family:'Poppins',sans-serif;font-size:2.6rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;
+      box-shadow:0 25px 50px rgba(255,215,0,.35),inset 0 3px 6px rgba(255,255,255,.4);border:4px solid rgba(255,255,255,.4)
     }
-    .diamond-pillar-number::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.3),transparent);animation:rotate 10s linear infinite}
-    .diamond-pillar-title{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:var(--royal-blue);margin-bottom:25px;text-shadow:1px 1px 3px rgba(0,0,0,.1)}
-    .diamond-pillar-text{font-family:'Inter',sans-serif;font-size:1.15rem;line-height:1.8;color:var(--text-medium)}
+    .diamond-pillar-title{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:var(--royal-blue);margin-bottom:14px}
+    .diamond-pillar-text{font-family:'Inter',sans-serif;font-size:1.02rem;line-height:1.8;color:var(--text-medium)}
 
     .royal-testimonial{
-      background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%);border-left:10px solid var(--luxury-gold);border-radius:25px;padding:50px;margin-bottom:50px;
-      box-shadow:0 25px 50px rgba(0,0,0,.1),inset 0 3px 6px rgba(255,255,255,.6);position:relative;overflow:hidden
+      background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%);border-left:10px solid var(--luxury-gold);border-radius:22px;padding:34px;margin-bottom:34px;
+      box-shadow:0 25px 50px rgba(0,0,0,.08),inset 0 3px 6px rgba(255,255,255,.5)
     }
-    .royal-testimonial::before{
-      content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold));
-      background-size:200% 100%;animation:shimmer 5s ease-in-out infinite
-    }
-    .royal-quote{
-      font-family:'Playfair Display',serif;font-size:1.6rem;font-style:italic;color:var(--text-medium);margin-bottom:35px;line-height:1.7;position:relative;padding-left:60px
-    }
-    .royal-quote::before{content:'"';font-size:6rem;color:var(--luxury-gold);opacity:.7;position:absolute;left:-5px;top:-20px;text-shadow:3px 3px 6px rgba(0,0,0,.1)}
+    .royal-quote{font-family:'Playfair Display',serif;font-size:1.28rem;font-style:italic;color:var(--text-medium);margin-bottom:20px;line-height:1.7;position:relative;padding-left:48px}
+    .royal-quote::before{content:'"';font-size:5rem;color:var(--luxury-gold);opacity:.7;position:absolute;left:0;top:-18px}
     .royal-author{display:flex;align-items:center}
     .royal-avatar{
-      width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
-      display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#fff;margin-right:30px;border:5px solid var(--luxury-gold);
-      box-shadow:0 15px 30px rgba(255,215,0,.4),inset 0 3px 6px rgba(255,255,255,.3)
+      width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+      display:flex;align-items:center;justify-content:center;font-size:2rem;color:#fff;margin-right:18px;border:4px solid var(--luxury-gold)
     }
-    .royal-author-details .name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.3rem;color:var(--royal-blue);margin-bottom:8px}
-    .royal-author-details .title{font-size:1.1rem;color:var(--text-medium);font-style:italic}
-
-    .elite-tips-list{list-style:none;padding:0}
-    .elite-tips-list li{
-      background:linear-gradient(135deg,#f8fafc 0%,#ffffff 100%);border-radius:25px;padding:45px;margin-bottom:40px;border:3px solid rgba(255,215,0,.3);
-      box-shadow:0 20px 40px rgba(0,0,0,.08),inset 0 3px 6px rgba(255,255,255,.6);transition:all .4s ease
-    }
-    .elite-tips-list li:hover{transform:translateY(-8px);border-color:var(--luxury-gold);box-shadow:0 35px 70px rgba(0,0,0,.15),0 0 30px rgba(255,215,0,.3)}
-    .elite-tips-list h4{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--royal-blue);margin-bottom:20px;font-weight:800}
+    .royal-author-details .name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;color:var(--royal-blue);margin-bottom:4px}
+    .royal-author-details .title{font-size:1rem;color:var(--text-medium);font-style:italic}
 
     .supreme-cta{
       background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue) 50%,var(--medium-blue));
-      color:white;text-align:center;padding:100px 60px;margin:0;position:relative;overflow:hidden
+      color:white;text-align:center;padding:80px 60px;margin:0;position:relative;overflow:hidden
     }
-    .supreme-cta::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,215,0,.15) 0%,transparent 70%);animation:pulse 8s ease-in-out infinite}
-    .supreme-cta::after{
-      content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold),var(--luxury-gold));
-      background-size:200% 100%;animation:shimmer 3s ease-in-out infinite
-    }
-    .supreme-title{font-family:'Playfair Display',serif;font-size:clamp(3rem,5vw,4.5rem);font-weight:900;margin-bottom:30px;position:relative;z-index:2;text-shadow:4px 8px 16px rgba(0,0,0,.4)}
-    .supreme-subtitle{font-family:'Poppins',sans-serif;font-size:1.4rem;margin-bottom:60px;opacity:.95;position:relative;z-index:2;max-width:700px;margin-left:auto;margin-right:auto}
+    .supreme-title{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,4.5vw,3.8rem);font-weight:900;margin-bottom:16px}
+    .supreme-subtitle{font-family:'Poppins',sans-serif;font-size:1.2rem;margin-bottom:42px;opacity:.95;max-width:700px;margin-inline:auto}
     .supreme-button{
-      display:inline-block;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));color:var(--royal-blue);padding:30px 80px;border-radius:50px;
-      font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:900;text-decoration:none;text-transform:uppercase;letter-spacing:3px;
-      box-shadow:0 30px 60px rgba(255,215,0,.5),inset 0 3px 6px rgba(255,255,255,.4);transition:all .5s ease;position:relative;z-index:2;border:4px solid rgba(255,255,255,.3);overflow:hidden
+      display:inline-block;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));color:var(--royal-blue);padding:22px 60px;border-radius:50px;
+      font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:900;text-decoration:none;text-transform:uppercase;letter-spacing:3px;
+      box-shadow:0 30px 60px rgba(255,215,0,.5),inset 0 3px 6px rgba(255,255,255,.4);border:4px solid rgba(255,255,255,.3)
     }
-    .supreme-button:hover{transform:translateY(-8px) scale(1.08);box-shadow:0 45px 90px rgba(255,215,0,.7),0 0 50px rgba(255,215,0,.6),inset 0 3px 6px rgba(255,255,255,.5);color:var(--royal-blue);text-decoration:none}
-
     .imperial-footer{
-      background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue));color:white;text-align:center;padding:80px 60px;font-size:1.1rem;position:relative;overflow:hidden
+      background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue));color:white;text-align:center;padding:60px 40px;font-size:1rem
     }
-    .imperial-footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold));background-size:200% 100%;animation:shimmer 4s ease-in-out infinite}
-    .imperial-links{margin-bottom:40px;display:flex;justify-content:center;flex-wrap:wrap;gap:40px}
+    .imperial-links{margin-bottom:26px;display:flex;justify-content:center;flex-wrap:wrap;gap:26px}
     .imperial-links a{
-      color:var(--luxury-gold);text-decoration:none;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.2rem;transition:all .4s ease;padding:15px 30px;border-radius:30px;border:3px solid transparent
+      color:var(--luxury-gold);text-decoration:none;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;transition:all .3s ease;padding:12px 22px;border-radius:28px;border:3px solid transparent
     }
-    .imperial-links a:hover{color:var(--royal-blue);background:var(--luxury-gold);border-color:var(--accent-gold);transform:translateY(-3px);box-shadow:0 15px 30px rgba(255,215,0,.4)}
+    .imperial-links a:hover{color:var(--royal-blue);background:var(--luxury-gold);border-color:var(--accent-gold)}
     .imperial-text{font-family:'Inter',sans-serif;opacity:.9;line-height:1.8}
 
     /* Mobile */
     @media (max-width: 768px){
-      .guide-container{margin:15px;border-radius:25px}
-      .royal-header{padding:60px 30px}
-      .elite-section{padding:60px 30px}
-      .inline-luxury{float:none;display:block;margin:30px auto;width:100%;max-width:300px;height:250px}
-      .diamond-grid{grid-template-columns:1fr;gap:30px}
-      .supreme-cta{padding:60px 30px}
-      .imperial-footer{padding:50px 30px}
-      .imperial-links{flex-direction:column;gap:20px}
-      .diamond-number{width:80px;height:80px;font-size:2rem}
-      .crown-logo{width:200px;height:200px}
-      .crown-icon{font-size:5rem}
+      .guide-container{margin:14px;border-radius:24px}
+      .royal-header{padding:60px 24px}
+      .elite-section{padding:56px 24px}
+      .inline-image,.inline-image.right{float:none;display:block;margin:18px auto;width:100%;max-width:360px}
+      .image-frame{margin:22px auto;border-radius:18px}
+      .diamond-grid{grid-template-columns:1fr;gap:24px}
+      .imperial-footer{padding:44px 24px}
+      .imperial-links{gap:16px}
     }
   </style>
 </head>
@@ -323,8 +265,9 @@
 
   <div class="guide-container">
     <header class="royal-header" role="banner">
+      <!-- Logo inside the golden medallion -->
       <div class="crown-logo" aria-hidden="true">
-        <div class="crown-icon" role="img" aria-label="Trumpet icon">🎺</div>
+        <img src="images/logo.png" alt="Real Mute logo" loading="eager" decoding="async">
       </div>
       <div class="luxury-badge">Professional Guide</div>
 
@@ -337,16 +280,25 @@
       <div class="premium-link-box">
         <p>Learn more about <a href="https://www.realmute.com/about" class="golden-link">Real Mute</a> revolutionary technology and patented design</p>
       </div>
+
+      <!-- Hero visual (product poster) -->
+      <figure class="image-frame" aria-label="Real Mute product highlight">
+        <img src="images/Trumpeting-Trouble.png" alt="Real Mute attached to a trumpet – play anytime, anywhere" loading="lazy" decoding="async">
+      </figure>
     </header>
 
     <main id="main" role="main">
+      <!-- Section 1 -->
       <section class="elite-section" aria-labelledby="sec-problem">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">1</div>
           <h2 id="sec-problem" class="elite-title">The Problem Everyone Ignores</h2>
         </div>
 
-        <div class="luxury-visual" aria-hidden="true">😤🎺</div>
+        <!-- Frustrated player at night -->
+        <figure class="image-frame" aria-label="Late-night practice frustration">
+          <img src="images/1.png" alt="Trumpet player frustrated late at night on the couch" loading="lazy" decoding="async">
+        </figure>
 
         <p class="luxury-text large">
           Let's be honest. You bought a practice mute for one simple reason: <strong>to play more</strong>.
@@ -373,6 +325,7 @@
         </p>
       </section>
 
+      <!-- Section 2 -->
       <section class="elite-section" aria-labelledby="sec-flaws">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">2</div>
@@ -380,9 +333,10 @@
           <p class="elite-subtitle">Why Most Mutes Hurt Your Playing</p>
         </div>
 
+        <!-- Flaw #1 -->
         <div class="royal-problem">
           <h3 class="royal-box-title">Flaw #1: They Destroy Your Intonation</h3>
-          <div class="inline-luxury" role="img" aria-label="Music note and chart icon">🎵📊</div>
+          <img class="inline-image" src="images/2.png" alt="Pitch meter showing intonation drift with practice mutes" loading="lazy" decoding="async">
 
           <p class="luxury-text"><strong>You're practicing the wrong notes.</strong></p>
           <p class="luxury-text">
@@ -397,9 +351,10 @@
           <div style="clear: both;"></div>
         </div>
 
+        <!-- Flaw #2 -->
         <div class="royal-problem">
           <h3 class="royal-box-title">Flaw #2: High Back-Pressure Ruins Your Embouchure</h3>
-          <div class="inline-luxury right" role="img" aria-label="Stressed face and air icon">😰💨</div>
+          <img class="inline-image right" src="images/3.png" alt="Icons for silence, true intonation, free airflow, clear tone" loading="lazy" decoding="async">
 
           <p class="luxury-text">
             You know that feeling of stuffiness? Like you're blowing against a wall? That's <strong>back-pressure</strong>. It's the air that has nowhere to go, so it pushes back against you.
@@ -417,6 +372,7 @@
           <div style="clear: both;"></div>
         </div>
 
+        <!-- Flaw #3 -->
         <div class="royal-problem">
           <h3 class="royal-box-title">Flaw #3: Terrible Sound Quality</h3>
           <p class="luxury-text">
@@ -426,11 +382,17 @@
         </div>
       </section>
 
+      <!-- Section 3 -->
       <section class="elite-section" aria-labelledby="sec-pillars">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">3</div>
           <h2 id="sec-pillars" class="elite-title">The Four Pillars of a Perfect Practice Mute</h2>
         </div>
+
+        <!-- Icons overview -->
+        <figure class="image-frame" aria-label="What to check before you buy">
+          <img src="images/3.png" alt="Icons: strong noise reduction, true intonation, free airflow, clear tone" loading="lazy" decoding="async">
+        </figure>
 
         <p class="luxury-text large">
           So, how do you find a mute that helps, not hurts? It comes down to four non-negotiable pillars. <strong>Any practice mute worth your money must deliver on all four.</strong>
@@ -471,6 +433,7 @@
         </div>
       </section>
 
+      <!-- Section 4 -->
       <section class="elite-section" aria-labelledby="sec-solution">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">4</div>
@@ -478,7 +441,10 @@
           <p class="elite-subtitle">Introducing Real Mute</p>
         </div>
 
-        <div class="luxury-visual" role="img" aria-label="Trumpet with sparkles">🎺✨</div>
+        <!-- According to your swap: 112233.png = real-time player -->
+        <figure class="image-frame" aria-label="Real-world use of Real Mute">
+          <img src="images/112233.png" alt="Trumpet player practicing with Real Mute in a studio" loading="lazy" decoding="async">
+        </figure>
 
         <p class="luxury-text large">
           For years, finding a mute that delivered on all four pillars felt impossible. You had to choose: do you want it to be quiet, or do you want it to be in tune?
@@ -500,12 +466,18 @@
           </ul>
         </div>
 
+        <!-- According to your swap: Screenshot-2025-08-07.jpg = close-up -->
+        <figure class="image-frame" aria-label="Real Mute close-up on the bell">
+          <img src="images/Screenshot-2025-08-07.jpg" alt="Close-up of Real Mute securely mounted on trumpet bell" loading="lazy" decoding="async">
+        </figure>
+
         <p class="luxury-text">
           Real Mute is the result of refusing to compromise. It's the practice tool we always wanted as musicians, and the one you deserve.
           <a href="https://www.realmute.com/about" class="golden-link">Learn more about the design</a>.
         </p>
       </section>
 
+      <!-- Section 5 -->
       <section class="elite-section" aria-labelledby="sec-testimonials">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">5</div>
@@ -538,44 +510,44 @@
           </div>
         </div>
 
-        <p class="luxury-text" style="text-align:center;margin-top:40px;">
+        <p class="luxury-text" style="text-align:center;margin-top:24px;">
           <a href="https://www.realmute.com/testimonials" class="golden-link">Read more testimonials from professional musicians</a>
         </p>
       </section>
 
+      <!-- Section 6 -->
       <section class="elite-section" aria-labelledby="sec-tips">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">6</div>
           <h2 id="sec-tips" class="elite-title">Pro-Tips for Your Real Mute</h2>
         </div>
 
-        <ul class="elite-tips-list">
-          <li>
-            <h4>Trust Your Ears Again</h4>
-            <p>Because Real Mute maintains true intonation and clarity, use it for more than just scales. Practice difficult passages, work on articulation, and listen for the subtle details in your sound. What you hear is what you're actually playing.</p>
+        <ul class="elite-tips-list" style="list-style:none;padding:0">
+          <li class="royal-solution" style="margin:0 0 26px;padding:24px">
+            <h3 class="royal-box-title" style="margin-bottom:10px">Trust Your Ears Again</h3>
+            <p class="luxury-text" style="margin:0">Because Real Mute maintains true intonation and clarity, use it for more than just scales. Practice difficult passages, work on articulation, and listen for the subtle details in your sound. What you hear is what you're actually playing.</p>
           </li>
-          <li>
-            <h4>The "Warm-Up Anywhere" Advantage</h4>
-            <p>Keep your Real Mute in your gig bag. Use it for a 10-minute backstage warm-up before a performance. The free-blowing nature means you can get your air moving and chops ready without fatigue, ensuring you walk on stage prepared.</p>
+          <li class="royal-solution" style="margin:0 0 26px;padding:24px">
+            <h3 class="royal-box-title" style="margin-bottom:10px">The "Warm-Up Anywhere" Advantage</h3>
+            <p class="luxury-text" style="margin:0">Keep your Real Mute in your gig bag. Use it for a 10-minute backstage warm-up before a performance. The free-blowing nature means you can get your air moving and chops ready without fatigue, ensuring you walk on stage prepared.</p>
           </li>
-          <li>
-            <h4>Combine with a Tuner</h4>
-            <p>For the ultimate intonation workout, practice with your Real Mute and a digital tuner. Since the mute doesn't alter the pitch, you can build rock-solid muscle memory and ear training that translates perfectly to unmuted playing.</p>
+          <li class="royal-solution" style="margin:0;padding:24px">
+            <h3 class="royal-box-title" style="margin-bottom:10px">Combine with a Tuner</h3>
+            <p class="luxury-text" style="margin:0">For the ultimate intonation workout, practice with your Real Mute and a digital tuner. Since the mute doesn't alter the pitch, you can build rock-solid muscle memory and ear training that translates perfectly to unmuted playing.</p>
           </li>
         </ul>
 
-        <p class="luxury-text" style="text-align:center;margin-top:40px;">
+        <p class="luxury-text" style="text-align:center;margin-top:20px;">
           <a href="https://www.realmute.com/support" class="golden-link">Get more practice tips and support</a>
         </p>
       </section>
 
+      <!-- Section 7 -->
       <section class="elite-section" aria-labelledby="sec-checklist">
         <div class="section-header">
           <div class="diamond-number" aria-hidden="true">7</div>
           <h2 id="sec-checklist" class="elite-title">Your Smart Buyer's Checklist</h2>
         </div>
-
-        <div class="inline-luxury" role="img" aria-label="Checkmark and clipboard">✅📋</div>
 
         <div class="royal-solution">
           <h3 class="royal-box-title">The Smart Buyer's Checklist</h3>
@@ -590,25 +562,26 @@
           </ul>
         </div>
 
-        <div style="clear: both;"></div>
-
         <p class="luxury-text large">
           You don't have to choose between playing well and playing quietly. If you're ready to experience what it feels like to practice without limits, to build correct habits, and to finally own a tool that helps instead of hinders, then you're ready for Real Mute.
         </p>
       </section>
     </main>
 
+    <!-- CTA -->
     <section class="supreme-cta" aria-labelledby="cta">
       <h2 id="cta" class="supreme-title">Ready to Transform Your Practice?</h2>
       <p class="supreme-subtitle">Join thousands of musicians who've discovered the freedom of perfect silent practice</p>
 
       <a href="https://www.realmute.com/shop" class="supreme-button">Visit the Real Mute Shop Today</a>
+      <img class="badge-under-cta" src="images/quality-certificate.webp" alt="Real Mute – 100% Quality Certificate" loading="lazy" decoding="async">
 
-      <p style="font-size:1.1rem;margin-top:40px;opacity:.9;position:relative;z-index:2;">
+      <p style="font-size:1rem;margin-top:24px;opacity:.9;">
         Worldwide Shipping • Patented Technology • Professional Support
       </p>
     </section>
 
+    <!-- Footer -->
     <footer class="imperial-footer" role="contentinfo">
       <nav class="imperial-links" aria-label="Footer">
         <a href="https://www.realmute.com">Home</a>
