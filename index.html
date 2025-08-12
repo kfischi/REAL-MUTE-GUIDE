@@ -1,600 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>The Ultimate Practice Mute Buyer's Guide - Real Mute</title>
-  <meta name="description" content="A professional buyer’s guide to practice mutes: the common flaws (intonation, back-pressure, muddy tone) and how to choose a mute that truly helps—featuring Real Mute." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="The Ultimate Practice Mute Buyer's Guide - Real Mute" />
-  <meta property="og:description" content="Why 90% of practice mutes are silently ruining your playing—and how to pick one that won’t." />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630/FFD700/000000?text=Real+Mute+Guide" />
-  <meta property="og:url" content="https://www.realmute.com/guide" />
-  <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Real Mute" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Ultimate Practice Mute Buyer's Guide - Real Mute" />
-  <meta name="twitter:description" content="Why 90% of practice mutes are silently ruining your playing—and how to pick one that won’t." />
-  <meta name="twitter:image" content="https://via.placeholder.com/1200x630/FFD700/000000?text=Real+Mute+Guide" />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.realmute.com/guide" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --luxury-gold:#FFD700;--dark-gold:#B8860B;--accent-gold:#FFA500;
-      --royal-blue:#0A0F2B;--deep-blue:#1A1F3A;--medium-blue:#2A3F5F;
-      --premium-white:#FFFFFF;--pearl-white:#F8FAFE;
-      --text-royal:#0A0F2B;--text-dark:#1A1F3A;--text-medium:#4A5568;
-      --emerald:#10B981;--ruby:#EF4444
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{
-      font-family:'Inter',system-ui,-apple-system,sans-serif;
-      line-height:1.8;color:var(--text-royal);
-      background:linear-gradient(135deg,#f0f4f8 0%,#d6e8f5 50%,#b8d4ea 100%);
-      font-size:16px;overflow-x:hidden
-    }
-    /* Background glows */
-    body::before{
-      content:'';position:fixed;inset:0;
-      background:
-        radial-gradient(circle at 25% 25%,rgba(255,215,0,.1) 0%,transparent 50%),
-        radial-gradient(circle at 75% 75%,rgba(255,165,0,.08) 0%,transparent 50%);
-      pointer-events:none;z-index:-1
-    }
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce){
-      *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
-    }
-    /* SR-only */
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .sr-only:focus{position:static;width:auto;height:auto;margin:0;clip:auto;padding:.5rem 1rem;background:#fff;border-radius:.5rem;box-shadow:0 0 0 3px var(--luxury-gold)}
-
-    /* Container */
-    .guide-container{
-      max-width:1000px;margin:30px auto;background:var(--premium-white);
-      box-shadow:0 60px 120px rgba(0,0,0,.15),0 25px 50px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.9);
-      border-radius:40px;overflow:hidden;position:relative;border:1px solid rgba(255,215,0,.2)
-    }
-    .guide-container::before{
-      content:'';position:absolute;top:0;left:0;right:0;height:6px;
-      background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold),var(--luxury-gold));
-      background-size:200% 100%;animation:shimmer 4s ease-in-out infinite
-    }
-    @keyframes shimmer{0%,100%{background-position:-200% 0}50%{background-position:200% 0}}
-
-    /* Header */
-    .royal-header{
-      background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue) 50%,var(--medium-blue));
-      color:#fff;text-align:center;padding:90px 60px;position:relative;overflow:hidden
-    }
-    .royal-header::before{
-      content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
-      background:conic-gradient(from 0deg,transparent,rgba(255,215,0,.1),transparent,rgba(255,165,0,.1),transparent);
-      animation:rotate 25s linear infinite;pointer-events:none
-    }
-    @keyframes rotate{to{transform:rotate(360deg)}}
-    .royal-header::after{
-      content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
-      background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold));opacity:.8
-    }
-    .crown-logo{
-      width:220px;height:220px;margin:0 auto 40px;border-radius:50%;
-      background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold) 50%,var(--dark-gold));
-      display:flex;align-items:center;justify-content:center;
-      box-shadow:0 40px 80px rgba(255,215,0,.4),0 20px 40px rgba(0,0,0,.2),inset 0 4px 8px rgba(255,255,255,.3);
-      position:relative;overflow:hidden;border:4px solid rgba(255,255,255,.3)
-    }
-    .crown-logo img{width:72%;height:auto;display:block}
-    .royal-title{
-      font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5.5vw,5rem);
-      font-weight:800;margin-bottom:18px;letter-spacing:-2px;position:relative;z-index:2;
-      background:linear-gradient(135deg,#ffffff 0%,#f7fafc 100%);
-      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text
-    }
-    .royal-subtitle{
-      font-family:'Poppins',sans-serif;font-size:clamp(1.2rem,2.6vw,1.8rem);
-      font-weight:400;margin-bottom:40px;opacity:.95;max-width:800px;margin-inline:auto;line-height:1.7
-    }
-    .luxury-badge{
-      display:inline-block;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      color:var(--royal-blue);padding:16px 40px;border-radius:50px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;letter-spacing:3px;
-      box-shadow:0 20px 40px rgba(255,215,0,.5),inset 0 3px 6px rgba(255,255,255,.3);
-      position:relative;border:3px solid rgba(255,255,255,.3)
-    }
-    .premium-link-box{
-      background:rgba(255,255,255,.2);border:3px solid rgba(255,215,0,.4);
-      border-radius:20px;padding:24px;margin-top:34px;backdrop-filter:blur(15px);
-      box-shadow:0 20px 40px rgba(0,0,0,.1),inset 0 3px 6px rgba(255,255,255,.3)
-    }
-    .premium-link-box p{margin:0;font-family:'Poppins',sans-serif;font-size:1.15rem;opacity:.95;text-align:center}
-
-    /* Sections */
-    .elite-section{padding:90px 80px;border-bottom:2px solid rgba(255,215,0,.15);position:relative;background:linear-gradient(135deg,#fff 0%,#fafbfc 100%)}
-    .elite-section:nth-child(even){background:linear-gradient(135deg,#f8fafc 0%,#fff 100%)}
-    .elite-section:last-child{border-bottom:none}
-    .elite-section::before{
-      content:'';position:absolute;top:0;left:0;width:10px;height:100%;
-      background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));opacity:.8;box-shadow:0 0 30px rgba(255,215,0,.4)
-    }
-    .section-header{margin-bottom:48px;text-align:center}
-
-    .diamond-number{
-      display:inline-flex;width:90px;height:90px;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      color:var(--royal-blue);border-radius:50%;font-family:'Poppins',sans-serif;font-size:2.2rem;font-weight:900;align-items:center;justify-content:center;margin-bottom:24px;
-      box-shadow:0 25px 50px rgba(255,215,0,.4),inset 0 3px 6px rgba(255,255,255,.3);
-      border:4px solid rgba(255,255,255,.4);position:relative;overflow:hidden
-    }
-    .elite-title{
-      font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:800;color:var(--royal-blue);
-      margin-bottom:18px;line-height:1.2
-    }
-    .elite-subtitle{font-family:'Poppins',sans-serif;font-size:1.3rem;color:var(--text-medium);font-weight:500;margin-bottom:36px}
-
-    /* Utility images */
-    .image-frame{
-      width:100%; max-width:900px; margin:32px auto; border-radius:24px; overflow:hidden;
-      box-shadow:0 30px 60px rgba(0,0,0,.15), inset 0 2px 4px rgba(255,255,255,.25);
-    }
-    .image-frame img{display:block;width:100%;height:auto}
-    .inline-image{
-      width:350px; max-width:40vw; border-radius:22px; margin:0 40px 30px 0; float:left;
-      box-shadow:0 20px 40px rgba(0,0,0,.12), inset 0 2px 4px rgba(255,255,255,.2);
-    }
-    .inline-image.right{ float:right; margin:0 0 30px 40px }
-    .badge-under-cta{ display:block; margin:28px auto 0; width:140px; max-width:40% }
-
-    .luxury-text{font-family:'Inter',sans-serif;font-size:1.15rem;line-height:2;color:var(--text-royal);margin-bottom:28px;text-align:justify}
-    .luxury-text.large{font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:600;color:var(--deep-blue);text-align:center;margin-bottom:42px}
-
-    .golden-highlight{
-      background:linear-gradient(135deg,rgba(255,215,0,.2) 0%,rgba(255,165,0,.3) 100%);
-      padding:6px 12px;border-radius:10px;font-weight:800;color:var(--royal-blue);border:2px solid rgba(255,215,0,.4)
-    }
-
-    .golden-link{
-      color:var(--dark-gold);text-decoration:none;font-weight:800;
-      background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;border-bottom:3px solid var(--luxury-gold);
-      transition:all .3s ease
-    }
-    .golden-link:hover{border-bottom-color:var(--accent-gold);transform:translateY(-1px)}
-
-    .royal-problem{
-      background:linear-gradient(135deg,#fef5e7 0%,#fed7aa 50%,#fdba74 100%);
-      border:4px solid #f97316;border-radius:30px;padding:40px;margin:48px 0;position:relative;overflow:hidden;
-      box-shadow:0 30px 60px rgba(249,115,22,.2),inset 0 3px 6px rgba(255,255,255,.35)
-    }
-    .royal-solution{
-      background:linear-gradient(135deg,#ecfdf5 0%,#a7f3d0 50%,#6ee7b7 100%);
-      border:4px solid #10b981;border-radius:30px;padding:40px;margin:48px 0;position:relative;overflow:hidden;
-      box-shadow:0 30px 60px rgba(16,185,129,.2),inset 0 3px 6px rgba(255,255,255,.35)
-    }
-    .royal-box-title{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:800;margin-bottom:20px;color:var(--royal-blue)}
-
-    .platinum-list{list-style:none;padding:0;margin:30px 0}
-    .platinum-list li{
-      padding:18px 0 18px 70px;position:relative;font-size:1.08rem;line-height:1.8;border-bottom:2px solid rgba(255,215,0,.2)
-    }
-    .platinum-list li:last-child{border-bottom:none}
-    .platinum-list li::before{
-      content:'';position:absolute;left:18px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;
-      background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));box-shadow:0 8px 20px rgba(255,215,0,.35)
-    }
-    .platinum-list.problems li::before{background:linear-gradient(135deg,#fca5a5 0%,#ef4444 100%)}
-    .platinum-list.solutions li::before{background:linear-gradient(135deg,#86efac 0%,#10b981 100%)}
-    .platinum-list.checklist li::before{background:linear-gradient(135deg,#a5b4fc 0%,#6366f1 100%)}
-
-    .diamond-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:34px;margin:56px 0}
-    .diamond-card{
-      background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);border:4px solid var(--luxury-gold);border-radius:26px;padding:36px;text-align:center;
-      box-shadow:0 30px 60px rgba(0,0,0,.1),inset 0 3px 6px rgba(255,255,255,.55);position:relative;overflow:hidden
-    }
-    .diamond-card::before{
-      content:'';position:absolute;top:0;left:0;right:0;height:8px;background:linear-gradient(90deg,var(--luxury-gold),var(--accent-gold),var(--luxury-gold));
-      background-size:200% 100%;animation:shimmer 4s ease-in-out infinite
-    }
-    .diamond-pillar-number{
-      width:110px;height:110px;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));
-      color:var(--royal-blue);border-radius:50%;font-family:'Poppins',sans-serif;font-size:2.6rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;
-      box-shadow:0 25px 50px rgba(255,215,0,.35),inset 0 3px 6px rgba(255,255,255,.4);border:4px solid rgba(255,255,255,.4)
-    }
-    .diamond-pillar-title{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:var(--royal-blue);margin-bottom:14px}
-    .diamond-pillar-text{font-family:'Inter',sans-serif;font-size:1.02rem;line-height:1.8;color:var(--text-medium)}
-
-    .royal-testimonial{
-      background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%);border-left:10px solid var(--luxury-gold);border-radius:22px;padding:34px;margin-bottom:34px;
-      box-shadow:0 25px 50px rgba(0,0,0,.08),inset 0 3px 6px rgba(255,255,255,.5)
-    }
-    .royal-quote{font-family:'Playfair Display',serif;font-size:1.28rem;font-style:italic;color:var(--text-medium);margin-bottom:20px;line-height:1.7;position:relative;padding-left:48px}
-    .royal-quote::before{content:'"';font-size:5rem;color:var(--luxury-gold);opacity:.7;position:absolute;left:0;top:-18px}
-    .royal-author{display:flex;align-items:center}
-    .royal-avatar{
-      width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
-      display:flex;align-items:center;justify-content:center;font-size:2rem;color:#fff;margin-right:18px;border:4px solid var(--luxury-gold)
-    }
-    .royal-author-details .name{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;color:var(--royal-blue);margin-bottom:4px}
-    .royal-author-details .title{font-size:1rem;color:var(--text-medium);font-style:italic}
-
-    .supreme-cta{
-      background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue) 50%,var(--medium-blue));
-      color:white;text-align:center;padding:80px 60px;margin:0;position:relative;overflow:hidden
-    }
-    .supreme-title{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,4.5vw,3.8rem);font-weight:900;margin-bottom:16px}
-    .supreme-subtitle{font-family:'Poppins',sans-serif;font-size:1.2rem;margin-bottom:42px;opacity:.95;max-width:700px;margin-inline:auto}
-    .supreme-button{
-      display:inline-block;background:linear-gradient(135deg,var(--luxury-gold),var(--accent-gold));color:var(--royal-blue);padding:22px 60px;border-radius:50px;
-      font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:900;text-decoration:none;text-transform:uppercase;letter-spacing:3px;
-      box-shadow:0 30px 60px rgba(255,215,0,.5),inset 0 3px 6px rgba(255,255,255,.4);border:4px solid rgba(255,255,255,.3)
-    }
-    .imperial-footer{
-      background:linear-gradient(135deg,var(--royal-blue),var(--deep-blue));color:white;text-align:center;padding:60px 40px;font-size:1rem
-    }
-    .imperial-links{margin-bottom:26px;display:flex;justify-content:center;flex-wrap:wrap;gap:26px}
-    .imperial-links a{
-      color:var(--luxury-gold);text-decoration:none;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;transition:all .3s ease;padding:12px 22px;border-radius:28px;border:3px solid transparent
-    }
-    .imperial-links a:hover{color:var(--royal-blue);background:var(--luxury-gold);border-color:var(--accent-gold)}
-    .imperial-text{font-family:'Inter',sans-serif;opacity:.9;line-height:1.8}
-
-    /* Mobile */
-    @media (max-width: 768px){
-      .guide-container{margin:14px;border-radius:24px}
-      .royal-header{padding:60px 24px}
-      .elite-section{padding:56px 24px}
-      .inline-image,.inline-image.right{float:none;display:block;margin:18px auto;width:100%;max-width:360px}
-      .image-frame{margin:22px auto;border-radius:18px}
-      .diamond-grid{grid-template-columns:1fr;gap:24px}
-      .imperial-footer{padding:44px 24px}
-      .imperial-links{gap:16px}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Mute - Practice Anytime, Anywhere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+        header, section {
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background: #111;
+            color: white;
+        }
+        header img {
+            max-width: 200px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        .feature img, .problem img, .solution img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .cta {
+            background: #111;
+            color: white;
+            padding: 30px 20px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .badge-under-cta {
+            margin-top: 20px;
+            max-width: 150px;
+        }
+    </style>
 </head>
 <body>
-  <a class="sr-only" href="#main">Skip to content</a>
 
-  <div class="guide-container">
-    <header class="royal-header" role="banner">
-      <!-- Logo inside the golden medallion -->
-      <div class="crown-logo" aria-hidden="true">
-        <img src="images/logo.png" alt="Real Mute logo" loading="eager" decoding="async">
-      </div>
-      <div class="luxury-badge">Professional Guide</div>
+<header>
+    <img src="images/logo.png" alt="Real Mute Logo">
+    <h1>Real Mute</h1>
+    <p>Practice Anytime, Anywhere</p>
+</header>
 
-      <h1 class="royal-title">The Ultimate Practice Mute Buyer's Guide</h1>
-      <h2 class="royal-subtitle">
-        Why 90% of Practice Mutes Are Silently Ruining Your Playing<br />
-        <em>(And How to Choose the One That Won't)</em>
-      </h2>
+<section class="hero">
+    <img src="images/Trumpeting-Trouble.png" alt="Real Mute Product Poster">
+</section>
 
-      <div class="premium-link-box">
-        <p>Learn more about <a href="https://www.realmute.com/about" class="golden-link">Real Mute</a> revolutionary technology and patented design</p>
-      </div>
+<section class="problem">
+    <h2>The Problem</h2>
+    <p>Late-night practice is impossible without disturbing others. Musicians often face frustration and limited practice hours.</p>
+    <img src="images/1.png" alt="Frustrated musician at night">
+</section>
 
-      <!-- Hero visual (product poster) -->
-      <figure class="image-frame" aria-label="Real Mute product highlight">
-        <img src="images/Trumpeting-Trouble.png" alt="Real Mute attached to a trumpet – play anytime, anywhere" loading="lazy" decoding="async">
-      </figure>
-    </header>
+<section class="feature">
+    <h2>Challenges Without Real Mute</h2>
+    <p>Intonation issues, uncontrolled airflow, and noise complaints are common without the right mute.</p>
+    <img src="images/2.png" alt="Intonation meter">
+    <img src="images/3.png" alt="Icons: mute, intonation, airflow, wave">
+</section>
 
-    <main id="main" role="main">
-      <!-- Section 1 -->
-      <section class="elite-section" aria-labelledby="sec-problem">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">1</div>
-          <h2 id="sec-problem" class="elite-title">The Problem Everyone Ignores</h2>
-        </div>
+<section class="solution">
+    <h2>The Real Mute Solution</h2>
+    <p>Experience perfect intonation, quiet practice, and free airflow — day or night.</p>
+    <img src="images/112233.png" alt="Close-up of Real Mute on trumpet">
+    <img src="images/Screenshot-2025-08-07-220231.jpg" alt="Musician using Real Mute live">
+</section>
 
-        <!-- Frustrated player at night -->
-        <figure class="image-frame" aria-label="Late-night practice frustration">
-          <img src="images/1.png" alt="Trumpet player frustrated late at night on the couch" loading="lazy" decoding="async">
-        </figure>
+<section class="cta">
+    <h2>Get Your Real Mute Today</h2>
+    <a href="https://www.realmute.com" target="_blank">Order Now</a>
+    <div>
+        <img class="badge-under-cta" src="images/quality-certificate-transparent.webp" alt="100% Quality Certificate Real Mute">
+    </div>
+</section>
 
-        <p class="luxury-text large">
-          Let's be honest. You bought a practice mute for one simple reason: <strong>to play more</strong>.
-        </p>
-
-        <p class="luxury-text">
-          You wanted to practice at midnight, warm up backstage without getting "the look," or just run through scales in your thin-walled apartment without starting a war with your neighbors. You wanted <span class="golden-highlight">freedom</span>.
-        </p>
-
-        <p class="luxury-text">
-          But what if I told you that the very tool you bought for freedom might be silently putting your progress in a cage? What if that mute, designed to solve one problem (noise), is secretly creating three new ones that are far more damaging to your playing?
-        </p>
-
-        <div class="royal-problem">
-          <h3 class="royal-box-title">The Hidden Truth</h3>
-          <p class="luxury-text">
-            For years, we accepted that practice mutes were a necessary evil. We knew they felt stuffy. We knew our pitch felt "off." We knew the sound was buzzy and unsatisfying. But we figured it was a fair trade for silence.
-          </p>
-          <p class="luxury-text"><strong>It's not. It's a bad trade.</strong></p>
-        </div>
-
-        <p class="luxury-text">
-          In the next ten minutes, you're going to discover the three "fatal flaws" of most common practice mutes, understand the science behind why they hinder your progress, and learn exactly what to look for in a mute that will actually make you a better musician.
-        </p>
-      </section>
-
-      <!-- Section 2 -->
-      <section class="elite-section" aria-labelledby="sec-flaws">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">2</div>
-          <h2 id="sec-flaws" class="elite-title">The "Fatal Flaws"</h2>
-          <p class="elite-subtitle">Why Most Mutes Hurt Your Playing</p>
-        </div>
-
-        <!-- Flaw #1 -->
-        <div class="royal-problem">
-          <h3 class="royal-box-title">Flaw #1: They Destroy Your Intonation</h3>
-          <img class="inline-image" src="images/2.png" alt="Pitch meter showing intonation drift with practice mutes" loading="lazy" decoding="async">
-
-          <p class="luxury-text"><strong>You're practicing the wrong notes.</strong></p>
-          <p class="luxury-text">
-            This is the most dangerous flaw. When you put a poorly designed mute in your bell, it changes the acoustic properties of your instrument. Certain notes will suddenly become sharp, others flat.
-          </p>
-          <p class="luxury-text">
-            You, being a dedicated musician, adjust your embouchure and slide position to "fix" it and play in tune <em>with the mute</em>. The problem? <span class="golden-highlight">You are now training your muscle memory and your ear to play out of tune</span>.
-          </p>
-          <p class="luxury-text">
-            Then you go to a rehearsal or a performance, take the mute out, and play with those same "corrected" habits. Suddenly, you're the one who's out of tune, and you have no idea why.
-          </p>
-          <div style="clear: both;"></div>
-        </div>
-
-        <!-- Flaw #2 -->
-        <div class="royal-problem">
-          <h3 class="royal-box-title">Flaw #2: High Back-Pressure Ruins Your Embouchure</h3>
-          <img class="inline-image right" src="images/3.png" alt="Icons for silence, true intonation, free airflow, clear tone" loading="lazy" decoding="async">
-
-          <p class="luxury-text">
-            You know that feeling of stuffiness? Like you're blowing against a wall? That's <strong>back-pressure</strong>. It's the air that has nowhere to go, so it pushes back against you.
-          </p>
-          <p class="luxury-text">This does two terrible things:</p>
-
-          <ul class="platinum-list problems">
-            <li>It causes physical tension, making you use more force than necessary</li>
-            <li>It kills your endurance, making practice sessions shorter and less productive</li>
-          </ul>
-
-          <p class="luxury-text">
-            A great practice mute should feel almost like you're playing on an open horn. The air should flow freely, allowing you to focus on your music, not on the physical struggle.
-          </p>
-          <div style="clear: both;"></div>
-        </div>
-
-        <!-- Flaw #3 -->
-        <div class="royal-problem">
-          <h3 class="royal-box-title">Flaw #3: Terrible Sound Quality</h3>
-          <p class="luxury-text">
-            Most mutes produce a buzzy, thin, or distorted sound. It's a caricature of your real tone. While it might be quiet, it's also useless for detailed work.
-          </p>
-          <p class="luxury-text"><span class="golden-highlight">If you can't hear your mistakes accurately, you can't fix them</span>. Quiet practice is pointless if it's not also <em>clear</em> practice.</p>
-        </div>
-      </section>
-
-      <!-- Section 3 -->
-      <section class="elite-section" aria-labelledby="sec-pillars">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">3</div>
-          <h2 id="sec-pillars" class="elite-title">The Four Pillars of a Perfect Practice Mute</h2>
-        </div>
-
-        <!-- Icons overview -->
-        <figure class="image-frame" aria-label="What to check before you buy">
-          <img src="images/3.png" alt="Icons: strong noise reduction, true intonation, free airflow, clear tone" loading="lazy" decoding="async">
-        </figure>
-
-        <p class="luxury-text large">
-          So, how do you find a mute that helps, not hurts? It comes down to four non-negotiable pillars. <strong>Any practice mute worth your money must deliver on all four.</strong>
-        </p>
-
-        <div class="diamond-grid" role="list" aria-label="Four pillars">
-          <div class="diamond-card" role="listitem">
-            <div class="diamond-pillar-number" aria-hidden="true">1</div>
-            <h3 class="diamond-pillar-title">Meaningful Acoustic Reduction</h3>
-            <p class="diamond-pillar-text">
-              You need significant, measurable noise reduction. A professional-grade mute should offer at least a <strong>40–50 dB reduction</strong>, turning the sound of a powerful trumpet into something as quiet as a normal conversation.
-            </p>
-          </div>
-
-          <div class="diamond-card" role="listitem">
-            <div class="diamond-pillar-number" aria-hidden="true">2</div>
-            <h3 class="diamond-pillar-title">Absolute Intonation Accuracy</h3>
-            <p class="diamond-pillar-text">
-              A perfect practice mute must <strong>not alter the pitch</strong> of your instrument. Period. This allows you to build correct muscle memory and ensures your practice time is always productive.
-            </p>
-          </div>
-
-          <div class="diamond-card" role="listitem">
-            <div class="diamond-pillar-number" aria-hidden="true">3</div>
-            <h3 class="diamond-pillar-title">Zero Back-Pressure & Free Airflow</h3>
-            <p class="diamond-pillar-text">
-              The ideal practice mute creates an open, <strong>free-blowing experience</strong> that feels nearly identical to playing without a mute, protecting your technique and building endurance naturally.
-            </p>
-          </div>
-
-          <div class="diamond-card" role="listitem">
-            <div class="diamond-pillar-number" aria-hidden="true">4</div>
-            <h3 class="diamond-pillar-title">Crystal Clear Sound</h3>
-            <p class="diamond-pillar-text">
-              The mute should act like a <strong>volume knob, not a distortion pedal</strong>. It should reduce the decibels but preserve the details, allowing you to self-correct and refine your playing with every note.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4 -->
-      <section class="elite-section" aria-labelledby="sec-solution">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">4</div>
-          <h2 id="sec-solution" class="elite-title">The Solution</h2>
-          <p class="elite-subtitle">Introducing Real Mute</p>
-        </div>
-
-        <!-- According to your swap: 112233.png = real-time player -->
-        <figure class="image-frame" aria-label="Real-world use of Real Mute">
-          <img src="images/112233.png" alt="Trumpet player practicing with Real Mute in a studio" loading="lazy" decoding="async">
-        </figure>
-
-        <p class="luxury-text large">
-          For years, finding a mute that delivered on all four pillars felt impossible. You had to choose: do you want it to be quiet, or do you want it to be in tune?
-        </p>
-
-        <p class="luxury-text large"><strong>You don't have to compromise anymore.</strong></p>
-
-        <div class="royal-solution">
-          <h3 class="royal-box-title">Revolutionary Technology</h3>
-          <p class="luxury-text">
-            After years of acoustic research and development, we created <strong><a href="https://www.realmute.com" class="golden-link">Real Mute</a></strong>. It was engineered to be the first practice mute to deliver on all four pillars without sacrifice:
-          </p>
-
-          <ul class="platinum-list solutions">
-            <li>A true <strong>50 dB of noise reduction</strong></li>
-            <li><strong>Perfect intonation</strong> — no pitch alterations</li>
-            <li>An almost <strong>open-horn feel with zero back-pressure</strong></li>
-            <li>Preserves the <strong>clarity and character of your sound</strong></li>
-          </ul>
-        </div>
-
-        <!-- According to your swap: Screenshot-2025-08-07.jpg = close-up -->
-        <figure class="image-frame" aria-label="Real Mute close-up on the bell">
-          <img src="images/Screenshot-2025-08-07.jpg" alt="Close-up of Real Mute securely mounted on trumpet bell" loading="lazy" decoding="async">
-        </figure>
-
-        <p class="luxury-text">
-          Real Mute is the result of refusing to compromise. It's the practice tool we always wanted as musicians, and the one you deserve.
-          <a href="https://www.realmute.com/about" class="golden-link">Learn more about the design</a>.
-        </p>
-      </section>
-
-      <!-- Section 5 -->
-      <section class="elite-section" aria-labelledby="sec-testimonials">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">5</div>
-          <h2 id="sec-testimonials" class="elite-title">What Professionals Are Saying</h2>
-        </div>
-
-        <div class="royal-testimonial">
-          <p class="royal-quote">
-            I've tried every practice mute on the market. Real Mute is the first one that doesn't feel like I'm fighting my own horn. The intonation is spot-on, and the feel is incredibly open. It's a game-changer for hotel room warm-ups.
-          </p>
-          <div class="royal-author">
-            <div class="royal-avatar" role="img" aria-label="Saxophone avatar">🎷</div>
-            <div class="royal-author-details">
-              <div class="name">Marcus Thorne</div>
-              <div class="title">Lead Trumpet, The Downtown Jazz Collective</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="royal-testimonial">
-          <p class="royal-quote">
-            As a classical player, intonation is everything. I can finally practice long tones and articulation exercises late at night without developing bad habits. Real Mute preserves the core of my sound. I recommend it to all my students.
-          </p>
-          <div class="royal-author">
-            <div class="royal-avatar" role="img" aria-label="Music score avatar">🎼</div>
-            <div class="royal-author-details">
-              <div class="name">Dr. Eleanor Vance</div>
-              <div class="title">Principal Trumpet, Metropolitan Symphony Orchestra</div>
-            </div>
-          </div>
-        </div>
-
-        <p class="luxury-text" style="text-align:center;margin-top:24px;">
-          <a href="https://www.realmute.com/testimonials" class="golden-link">Read more testimonials from professional musicians</a>
-        </p>
-      </section>
-
-      <!-- Section 6 -->
-      <section class="elite-section" aria-labelledby="sec-tips">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">6</div>
-          <h2 id="sec-tips" class="elite-title">Pro-Tips for Your Real Mute</h2>
-        </div>
-
-        <ul class="elite-tips-list" style="list-style:none;padding:0">
-          <li class="royal-solution" style="margin:0 0 26px;padding:24px">
-            <h3 class="royal-box-title" style="margin-bottom:10px">Trust Your Ears Again</h3>
-            <p class="luxury-text" style="margin:0">Because Real Mute maintains true intonation and clarity, use it for more than just scales. Practice difficult passages, work on articulation, and listen for the subtle details in your sound. What you hear is what you're actually playing.</p>
-          </li>
-          <li class="royal-solution" style="margin:0 0 26px;padding:24px">
-            <h3 class="royal-box-title" style="margin-bottom:10px">The "Warm-Up Anywhere" Advantage</h3>
-            <p class="luxury-text" style="margin:0">Keep your Real Mute in your gig bag. Use it for a 10-minute backstage warm-up before a performance. The free-blowing nature means you can get your air moving and chops ready without fatigue, ensuring you walk on stage prepared.</p>
-          </li>
-          <li class="royal-solution" style="margin:0;padding:24px">
-            <h3 class="royal-box-title" style="margin-bottom:10px">Combine with a Tuner</h3>
-            <p class="luxury-text" style="margin:0">For the ultimate intonation workout, practice with your Real Mute and a digital tuner. Since the mute doesn't alter the pitch, you can build rock-solid muscle memory and ear training that translates perfectly to unmuted playing.</p>
-          </li>
-        </ul>
-
-        <p class="luxury-text" style="text-align:center;margin-top:20px;">
-          <a href="https://www.realmute.com/support" class="golden-link">Get more practice tips and support</a>
-        </p>
-      </section>
-
-      <!-- Section 7 -->
-      <section class="elite-section" aria-labelledby="sec-checklist">
-        <div class="section-header">
-          <div class="diamond-number" aria-hidden="true">7</div>
-          <h2 id="sec-checklist" class="elite-title">Your Smart Buyer's Checklist</h2>
-        </div>
-
-        <div class="royal-solution">
-          <h3 class="royal-box-title">The Smart Buyer's Checklist</h3>
-          <ul class="platinum-list checklist">
-            <li>Does it offer a specific, significant noise reduction (over 40–50 dB)?</li>
-            <li>Does it guarantee it will not alter your instrument's intonation?</li>
-            <li>Does it provide a free-blowing experience with minimal or zero back-pressure?</li>
-            <li>Does it allow you to hear a clear, true representation of your tone?</li>
-            <li>Is it designed to be durable and easy to use for daily practice?</li>
-            <li>Does it come with professional testimonials and reviews?</li>
-            <li>Is there a satisfaction guarantee or return policy?</li>
-          </ul>
-        </div>
-
-        <p class="luxury-text large">
-          You don't have to choose between playing well and playing quietly. If you're ready to experience what it feels like to practice without limits, to build correct habits, and to finally own a tool that helps instead of hinders, then you're ready for Real Mute.
-        </p>
-      </section>
-    </main>
-
-    <!-- CTA -->
-    <section class="supreme-cta" aria-labelledby="cta">
-      <h2 id="cta" class="supreme-title">Ready to Transform Your Practice?</h2>
-      <p class="supreme-subtitle">Join thousands of musicians who've discovered the freedom of perfect silent practice</p>
-
-      <a href="https://www.realmute.com/shop" class="supreme-button">Visit the Real Mute Shop Today</a>
-      <img class="badge-under-cta" src="images/quality-certificate.webp" alt="Real Mute – 100% Quality Certificate" loading="lazy" decoding="async">
-
-      <p style="font-size:1rem;margin-top:24px;opacity:.9;">
-        Worldwide Shipping • Patented Technology • Professional Support
-      </p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="imperial-footer" role="contentinfo">
-      <nav class="imperial-links" aria-label="Footer">
-        <a href="https://www.realmute.com">Home</a>
-        <a href="https://www.realmute.com/shop">Shop</a>
-        <a href="https://www.realmute.com/testimonials">Testimonials</a>
-        <a href="https://www.realmute.com/support">Support</a>
-        <a href="https://www.realmute.com/contact">Contact</a>
-      </nav>
-      <div class="imperial-text">
-        <p>&copy; 2025 Real Mute Technologies. All rights reserved.</p>
-        <p>Designed for musicians, by musicians.</p>
-      </div>
-    </footer>
-  </div>
 </body>
 </html>
