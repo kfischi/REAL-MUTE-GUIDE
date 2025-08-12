@@ -17,215 +17,138 @@
   *{box-sizing:border-box}
   html,body{margin:0}
   body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
-  img{display:block;max-width:100%;height:auto;border-radius:12px}
   h1,h2,h3{margin:0 0 .4em}
   p{margin:.6em 0}
   .book{max-width:var(--max);margin:28px auto;background:var(--paper);border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.12);overflow:hidden}
   .page{padding:42px clamp(18px,4vw,48px);border-bottom:1px solid #e5e7eb}
   .page:last-child{border-bottom:none}
 
-  /* HERO – רקע עם שכבה שחורה, בלי חפיפות */
+  /* HERO */
   .hero{
-    padding:0; position:relative; min-height:70vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
-    background:#000 url("images/Trumpeting-Trouble.png") center/cover no-repeat;
+    padding:48px 24px; 
+    background:#000; 
+    text-align:center; 
+    color:#fff;
   }
-  .hero::before{content:""; position:absolute; inset:0; background:rgba(0,0,0,.4)} /* overlay 40% */
-  .hero .inner{position:relative; z-index:1; padding:48px 24px; width:min(900px,100%)}
-  .logo{width:min(220px,45vw); margin:0 auto 18px; filter:drop-shadow(0 8px 20px rgba(0,0,0,.4))}
   .hero h1{font-family:"Playfair Display",serif; font-size:clamp(28px,5vw,54px); font-weight:800; letter-spacing:-.01em}
   .hero .lead{font-family:Poppins,sans-serif; font-size:clamp(16px,2.1vw,22px)}
   .hero .lead em{opacity:.95}
 
-  /* כותרות עמודים */
+  /* כותרות */
   .title{font-family:"Playfair Display",serif;font-size:clamp(26px,3.2vw,40px);font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
   .subtitle{color:var(--muted);margin-bottom:14px}
 
-  /* בלוקים ותמונות */
-  .figure{margin:18px 0}
+  /* בלוקים */
   .card{background:#fafbff;border:1px solid #e5e7eb;border-radius:var(--radius);padding:18px}
 
-  /* גרידים יציבים שלא חופפים */
+  /* גרידים */
   .grid{display:grid;gap:var(--gap)}
   .grid-2{grid-template-columns:1fr 1fr}
-  .grid-2 img{width:100%}
   @media (max-width: 900px){ .grid-2{grid-template-columns:1fr} }
 
-  /* עמוד עקרונות כהה אך טקסט ותמונות בזרימה רגילה */
+  /* עמוד עקרונות */
   .dark{background:#0b1228;color:#fff}
   .dark .title{color:#fff}
   .pillar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:18px}
   .pill-num{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:999px;background:linear-gradient(180deg,#ffd700,#e6c200);color:#111;font-weight:800;margin-bottom:8px}
   .pillar h3{font-family:Poppins,sans-serif;color:#ffd700;font-size:18px;margin:6px 0}
 
-  /* צ'קליסט וכפתור */
+  /* צ'קליסט */
   .check li{list-style:none;margin:10px 0;padding-left:30px;position:relative}
   .check li::before{content:"□";position:absolute;left:0;top:0;color:#64748b;font-size:20px}
   .cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:12px}
   .btn{display:inline-block;background:linear-gradient(180deg,#ffd700,#e6c200);color:#111;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none}
-  .badge{width:130px}
-
-  /* מרווחים בין פרקים */
-  .spacer{height:6px}
 </style>
 </head>
 <body>
 
 <main class="book">
 
-  <!-- PAGE 1: COVER -->
+  <!-- PAGE 1 -->
   <section class="page hero" aria-label="Cover">
-    <div class="inner">
-      <img class="logo" src="images/logo.png" alt="Real Mute logo">
-      <h1>The Ultimate Practice Mute Buyer's Guide</h1>
-      <p class="lead">Why 90% of Practice Mutes Are Silently Ruining Your Playing.<br>
-        <em>(And How to Choose the One That Won't)</em></p>
-    </div>
+    <h1>The Ultimate Practice Mute Buyer's Guide</h1>
+    <p class="lead">Why 90% of Practice Mutes Are Silently Ruining Your Playing.<br>
+      <em>(And How to Choose the One That Won't)</em></p>
   </section>
 
-  <!-- PAGE 2: INTRO – תמונה + טקסט בקופסה נקייה מתחת (בלי חפיפות) -->
+  <!-- PAGE 2 -->
   <section class="page" aria-label="Introduction">
     <h2 class="title">The Practice Paradox</h2>
-    <p class="subtitle">A dramatic, full-bleed photo of the frustrated musician with readable text.</p>
-
-    <figure class="figure">
-      <img src="images/1.png" alt="Frustrated musician late at night">
-    </figure>
-
+    <p class="subtitle">A dramatic, full-bleed intro.</p>
     <div class="card">
       <p>It’s 10:30 PM. Inspiration strikes. But your instrument stays in its case.</p>
-      <p>This is the Practice Paradox. The moments you most want to play—when the house is quiet, the day's obligations are done, and your mind is finally clear enough to focus on that difficult passage—are the very moments you can't. The neighbors, your sleeping family, the paper-thin walls of modern life... they all conspire to keep your instrument silent.</p>
-      <p>So, like countless serious musicians before you, you sought a solution. You bought a practice mute. You thought you'd found the ultimate hack, a key to unlocking the unlimited practice time you crave. You bought it to solve one simple problem: noise.</p>
-      <p>But what if that solution is a trap? What if, in silencing your instrument, your mute is also silencing your progress? What if the tool you trust to help you improve is secretly teaching you bad habits, degrading your technique, and making you a less accurate, less efficient musician with every passing minute?</p>
-      <p>For decades, the brass community has been forced to accept a flawed premise: that to practice quietly, one must compromise. Compromise on sound. Compromise on intonation. Compromise on the very physical nature of playing. We believed it was a necessary evil.</p>
-      <p>This guide is here to tell you that this compromise is no longer necessary. The technology has changed. You are about to learn the three "fatal flaws" hard-coded into the DNA of most practice mutes, understand the acoustics behind why they fail, and discover the four non-negotiable pillars of a mute that will not only allow you to practice quietly but will actively accelerate your journey toward mastery.</p>
+      <p>This is the Practice Paradox. The moments you most want to play—when the house is quiet, the day's obligations are done, and your mind is finally clear enough to focus on that difficult passage—are the very moments you can't.</p>
+      <p>So, like countless serious musicians before you, you sought a solution. You bought a practice mute. You thought you'd found the ultimate hack...</p>
+      <p>But what if that solution is a trap?</p>
     </div>
   </section>
 
-  <!-- PAGE 3: FLAW #1 – שתי עמודות יציבות -->
+  <!-- PAGE 3 -->
   <section class="page" aria-label="Flaw 1">
     <h2 class="title">Flaw #1 – The Intonation Trap</h2>
-    <p class="subtitle">Image left • Text right</p>
-
-    <div class="grid grid-2">
-      <figure class="figure">
-        <img src="images/2.png" alt="Pitch meter indicating intonation drift">
-      </figure>
-      <div>
-        <h3>Flaw #1: You’re Practicing to be Out of Tune</h3>
-        <p>This is the most insidious flaw because it masquerades as progress. When you place a poorly designed mute into the bell of your horn, you fundamentally alter the physics of the instrument. The length and shape of the air column are changed, distorting the natural harmonic series. As a result, certain notes become sharp, others flat.</p>
-        <p>Being a dedicated musician, you do what you're trained to do: you listen, and you adjust. You tighten your embouchure here, relax it there, subtly alter your slide or valve combinations to make the notes sound correct with the mute in. The needle on your tuner hits the green. You feel a sense of accomplishment.</p>
-        <p>But what you have actually accomplished is a disaster for your development. You have spent an hour meticulously training your muscle memory and your ear to play out of tune. It's like a basketball player practicing for hours on a crooked hoop. They might become an expert at scoring on that specific, flawed hoop, but they will miss every single shot in a real game.</p>
-        <p>The moment you step on stage or into a rehearsal and play without the mute, your body will default to those ingrained, incorrect adjustments. You'll be sharp on your G, flat on your C, and your colleagues will be giving you confused looks. A practice tool that forces you to practice imperfection isn't just unhelpful—it's actively setting you back.</p>
-      </div>
+    <div>
+      <h3>You’re Practicing to be Out of Tune</h3>
+      <p>When you place a poorly designed mute into the bell of your horn, you fundamentally alter the physics of the instrument...</p>
     </div>
   </section>
 
-  <!-- PAGE 4: FLAW #2 + #3 -->
+  <!-- PAGE 4 -->
   <section class="page" aria-label="Flaw 2 and 3">
     <h2 class="title">The Physical &amp; Auditory Betrayal</h2>
-
-    <div class="grid grid-2" style="margin-top:10px">
-      <figure class="figure">
-        <img src="images/3.png" alt="Icons for silence, intonation, airflow, clear tone">
-      </figure>
-      <div>
-        <h3>Flaw #2: You’re Learning to Fight Your Equipment</h3>
-        <p>That stuffy, clogged feeling when you play into a mute? That’s back-pressure. It’s a traffic jam for your air column, and it's teaching you a terrible lesson: that playing your instrument is about force, not finesse.</p>
-        <p>This constant resistance has two devastating effects. First, it kills your endurance. Fighting against your own air is physically exhausting, leading to shorter, less productive practice sessions. Second, and more importantly, it promotes tension throughout your body. Your embouchure learns to be tight and pinched, your support becomes rigid, and your overall approach becomes one of strain. This not only limits your dynamic range and tonal colors but can even contribute to long-term playing injuries.</p>
-        <p>A truly great practice session should feel free and resonant, mirroring the physical experience of playing open horn. You should be focused on the nuance of your musical phrasing, not on a physical struggle against a piece of equipment.</p>
-      </div>
+    <div>
+      <h3>Flaw #2: You’re Learning to Fight Your Equipment</h3>
+      <p>That stuffy, clogged feeling when you play into a mute? That’s back-pressure...</p>
     </div>
-
-    <div class="card" style="margin-top:var(--gap)">
-      <h3>Flaw #3: The Sound is a Lie (You’re Flying Blind)</h3>
-      <p>Most mutes don't just reduce the volume; they butcher the sound. They strip away the complex overtones that give your instrument its character, producing a thin, buzzy, distorted tone that is a pale imitation of your real sound.</p>
-      <p>This is a critical problem for artistic development. How can you work on the warmth and core of your tone if you can't actually hear it? How can you refine the subtle crispness of your staccato or the smoothness of your legato if all you hear is a fuzzy, indistinct buzz?</p>
-      <p>Practicing with a bad-sounding mute is like trying to edit a beautiful photograph on a blurry, low-resolution screen. You can't fix details you can't see. You need a tool that acts as a pure volume knob, turning down the decibels while preserving the rich sonic information that allows you to self-assess, self-correct, and truly refine your art.</p>
+    <div class="card">
+      <h3>Flaw #3: The Sound is a Lie</h3>
+      <p>Most mutes don't just reduce the volume; they butcher the sound...</p>
     </div>
   </section>
 
-  <!-- PAGE 5: FOUR PILLARS -->
+  <!-- PAGE 5 -->
   <section class="page dark" aria-label="Four Pillars">
     <h2 class="title">The Framework for a True Practice Solution</h2>
-    <p class="subtitle">A mute that helps, not hurts, is built on four non-negotiable pillars.</p>
-
-    <figure class="figure">
-      <img src="images/3.png" alt="Four icons representing reduction, intonation, airflow, clarity">
-    </figure>
-
-    <div class="grid grid-2" style="margin-top:var(--gap)">
+    <div class="grid grid-2">
       <div class="pillar">
         <div class="pill-num">1</div>
         <h3>Meaningful Acoustic Reduction</h3>
-        <p>True practice freedom comes from significant, measurable noise reduction. A professional-grade mute should deliver a <strong>40–50 dB</strong> reduction, transforming a 110 dB fortissimo into a ~60 dB whisper—the level of normal conversation.</p>
+        <p>True practice freedom comes from significant, measurable noise reduction...</p>
       </div>
       <div class="pillar">
         <div class="pill-num">2</div>
         <h3>Absolute Intonation Accuracy</h3>
-        <p>The mute must be acoustically transparent. It should not require any embouchure or slide adjustments to play in tune. When the equipment is in tune, you can build unwavering confidence in your own pitch.</p>
+        <p>The mute must be acoustically transparent...</p>
       </div>
       <div class="pillar">
         <div class="pill-num">3</div>
-        <h3>Zero Back-Pressure &amp; Free Airflow</h3>
-        <p>The ideal mute feels like it’s not there. Your air should flow freely, letting your embouchure stay relaxed and your endurance build naturally—so you can focus on phrasing, dynamics, and artistry.</p>
+        <h3>Zero Back-Pressure</h3>
+        <p>The ideal mute feels like it’s not there...</p>
       </div>
       <div class="pillar">
         <div class="pill-num">4</div>
         <h3>Crystal Clear Sound</h3>
-        <p>The mute should act as a high-fidelity volume control, not a distortion pedal. It must preserve core, overtones, and articulation nuance, empowering you to self-assess and refine your playing.</p>
+        <p>The mute should act as a high-fidelity volume control...</p>
       </div>
     </div>
   </section>
 
-  <!-- PAGES 6–7: SOLUTION (תמונה + טקסט) -->
+  <!-- PAGE 6 -->
   <section class="page" aria-label="The Solution">
-    <div class="grid grid-2">
-      <figure class="figure">
-        <img src="images/112233.png" alt="Trumpet player practicing with Real Mute">
-      </figure>
-
-      <div>
-        <figure class="figure">
-          <img src="images/Trumpeting-Trouble.png" alt="Hero shot of the Real Mute">
-        </figure>
-
-        <h2 class="title">For Years, You Had to Choose. Not Anymore.</h2>
-        <p class="subtitle">The old way forced a compromise. Getting all four pillars in one tool was “impossible.” That compromise is now over.</p>
-
-        <p>After three years of obsessive acoustic research and development, we engineered Real Mute with a single, uncompromising goal: to deliver on all four pillars without sacrifice. It is the result of refusing to accept the old trade-offs.</p>
-        <p><strong>It delivers a true 50 dB of noise reduction.</strong> That’s the freedom to practice with total confidence in any environment.</p>
-        <p><strong>It maintains surgically precise intonation.</strong> Every minute of practice builds correct muscle memory.</p>
-        <p><strong>It features a zero back-pressure design.</strong> Build real technique and endurance naturally, without fighting your horn.</p>
-        <p><strong>It preserves the clarity and core of your sound.</strong> Hear yourself accurately and refine your unique artistic voice.</p>
-        <p>Trusted by studio musicians, top-tier educators, and serious students, Real Mute is more than a piece of equipment. It is a commitment to the integrity of your practice.</p>
-      </div>
-    </div>
+    <h2 class="title">For Years, You Had to Choose. Not Anymore.</h2>
+    <p>The old way forced a compromise. Getting all four pillars in one tool was “impossible.” That compromise is now over...</p>
   </section>
 
-  <!-- PAGE 8: CHECKLIST + CTA -->
+  <!-- PAGE 7 -->
   <section class="page" aria-label="Checklist & CTA">
     <h2 class="title">Your Next Step is Clear</h2>
-    <p class="subtitle">Your practice time is the most valuable asset you have as a musician.</p>
-
-    <div class="grid grid-2">
-      <div class="card">
-        <h3 style="margin-top:0">The Smart Buyer's Checklist</h3>
-        <ul class="check">
-          <li>Does it guarantee perfect intonation across all registers?</li>
-          <li>Does it feel open and free-blowing, with zero back-pressure?</li>
-          <li>Does it offer a scientifically measured, significant noise reduction?</li>
-          <li>Does it let me hear a clear, true representation of my tone?</li>
-        </ul>
-        <div class="cta">
-          <a class="btn" href="https://www.realmute.com/shop">Visit the Real Mute Shop &amp; Transform Your Practice Today</a>
-          <img class="badge" src="images/quality-certificate-transparent.webp" alt="Real Mute – 100% Quality Certificate">
-        </div>
-        <p style="color:var(--muted);margin:.6em 0 0">Worldwide Shipping • Patented Technology • Professional Support</p>
-      </div>
-
-      <figure class="figure">
-        <img src="images/Screenshot-2025-08-07-220231.jpg" alt="Close-up of Real Mute mounted on trumpet bell">
-      </figure>
+    <ul class="check">
+      <li>Perfect intonation across all registers?</li>
+      <li>Open and free-blowing?</li>
+      <li>Significant noise reduction?</li>
+      <li>Clear, true tone?</li>
+    </ul>
+    <div class="cta">
+      <a class="btn" href="#">Visit the Real Mute Shop</a>
     </div>
   </section>
 
